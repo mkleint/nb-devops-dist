@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.netbeans.devops</groupId>
@@ -11,7 +11,7 @@
     <artifactId>nb-devops-dist-app</artifactId>
     <packaging>nbm-application</packaging>
 
-    <name>NetBeans DevOps application</name>
+    <name>NetBeans DevOps</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,38 +32,7 @@
             <type>pom</type>
             <exclusions>
                 <exclusion>
-                    <artifactId>org-netbeans-modules-jellytools-ide</artifactId>
-                    <groupId>org.netbeans.api</groupId>
-                </exclusion>
-                
-            </exclusions>
-            <!--exclusions>
-                <exclusion>
-                    <artifactId>org-netbeans-modules-javascript2-knockout</artifactId>
-                    <groupId>org.netbeans.modules</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>org-netbeans-modules-javascript2-jquery</artifactId>
-                    <groupId>org.netbeans.modules</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>org-netbeans-modules-javascript2-extjs</artifactId>
-                    <groupId>org.netbeans.modules</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>org-netbeans-modules-html-knockout</artifactId>
-                    <groupId>org.netbeans.modules</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>org-netbeans-modules-html-angular</artifactId>
-                    <groupId>org.netbeans.modules</groupId>
-                </exclusion>
-                <exclusion>
                     <artifactId>org-netbeans-modules-javascript2-kit</artifactId>
-                    <groupId>org.netbeans.modules</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>org-netbeans-modules-javascript2-debug</artifactId>
                     <groupId>org.netbeans.modules</groupId>
                 </exclusion>
                 <exclusion>
@@ -82,14 +51,169 @@
                     <artifactId>org-netbeans-modules-db-kit</artifactId>
                     <groupId>org.netbeans.modules</groupId>
                 </exclusion>
-            </exclusions-->
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db</artifactId>
+                    <groupId>org.netbeans.api</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db-core</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db-dataview</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db-drivers</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db-metadata-model</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db-mysql</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db-sql-editor</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-db-sql-visualeditor</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-dbapi</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-derby</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-core-contenttype</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-core-net</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-core-runtime</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-equinox-app</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-equinox-common</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-equinox-preferences</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-core-jobs</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-core-runtime-compatibility-auth</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-equinox-registry</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-equinox-security</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-bugzilla-core</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-commons-core</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-commons-net</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-commons-repositories-core</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-commons-xmlrpc</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-tasks-core</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-wikitext-confluence-core</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-wikitext-core</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-eclipse-mylyn-wikitext-textile-core</artifactId>
+                    <groupId>org.netbeans.external</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-bugzilla</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-bugtracking</artifactId>
+                    <groupId>org.netbeans.api</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-bugtracking-bridge</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-bugtracking-commons</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-html-angular</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-html-knockout</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-javascript2-jquery</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-javascript2-knockout</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-mylyn-util</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-team-ide</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-localtasks</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         
-        <!--dependency>
-            <groupId>org.netbeans.modules</groupId>
-            <artifactId>org-netbeans-modules-languages-sh</artifactId>
-            <version>RELEASE65</version>
-        </dependency-->
         <dependency>
             <groupId>org.netbeans.modules</groupId>
             <artifactId>org-netbeans-modules-languages-ini</artifactId>
@@ -113,13 +237,6 @@
             <version>${netbeans.version}</version>
         </dependency>
         
-        
-        <!--dependency>
-            <groupId>org.netbeans.modules</groupId>
-            <artifactId>org-netbeans-modules-languages-bat</artifactId>
-            <version>RELEASE65</version>
-        </dependency-->
-        
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>nb-devops-dist-branding</artifactId>
@@ -132,18 +249,41 @@
             <version>${netbeans.version}</version>
             <type>pom</type>
         </dependency>
+
         
+        <!-- groovy.kit depends on java.kit, expanded it's dependencies here and trying to pick just some-->                        
+        <!--dependency>
+          <groupId>org.netbeans.modules</groupId>
+          <artifactId>org-netbeans-modules-groovy-antproject</artifactId>
+          <version>RELEASE80</version>
+        </dependency-->
         <dependency>
             <groupId>org.netbeans.modules</groupId>
-            <artifactId>org-netbeans-modules-groovy-kit</artifactId>
+            <artifactId>org-netbeans-modules-groovy-editor</artifactId>
             <version>${netbeans.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-modules-groovy-refactoring</artifactId>
+            <version>${netbeans.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.modules</groupId>
+            <artifactId>org-netbeans-modules-libs-groovy</artifactId>
+            <version>${netbeans.version}</version>
+        </dependency>
+
         
         <dependency>
             <groupId>qubit-cucumber-editor</groupId>
             <artifactId>qubit-cucumber-editor</artifactId>
             <version>custom</version>
             <type>nbm</type>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-i18n</artifactId>
+            <version>${netbeans.version}</version>
         </dependency>
         
         <dependency>
