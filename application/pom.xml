@@ -101,7 +101,7 @@
             <artifactId>org-netbeans-modules-cnd-script</artifactId>
             <version>${netbeans.version}</version>
         </dependency>
-        <!-- these two dependencies are only neccessary because the cnd-script module has dependency on cnd-core
+        <!-- these two dependencies are only neccessary because the cnd-script module has dependency on cnd-core-->
         <dependency>
             <groupId>org.netbeans.modules</groupId>
             <artifactId>org-netbeans-modules-cnd-remote</artifactId>
@@ -111,7 +111,7 @@
             <groupId>org.netbeans.modules</groupId>
             <artifactId>org-netbeans-modules-dlight-remote-impl</artifactId>
             <version>${netbeans.version}</version>
-        </dependency-->
+        </dependency>
         
         
         <!--dependency>
