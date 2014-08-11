@@ -8,6 +8,8 @@ Contains support for Puppet, Ruby, Cucumber, Groovy, Vagrant, CSV and shell scri
 Apart from modules originating at Netbeans.org main repository contains binaries from 
 following projects:
 
+http://hg.netbeans.org/community-ruby/
+
 https://bitbucket.org/draganbjedov/nb-csv-editor
 
 https://github.com/junichi11/netbeans-vagrant-plugin/
