@@ -27,6 +27,22 @@
         </dependency>
         <dependency>
             <groupId>org.netbeans.cluster</groupId>
+            <artifactId>nb</artifactId>
+            <version>${netbeans.version}</version>
+            <type>pom</type>
+            <exclusions>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-ide-branding-kit</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>org-netbeans-modules-bugzilla-exceptionreporter</artifactId>
+                    <groupId>org.netbeans.modules</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.cluster</groupId>
             <artifactId>ide</artifactId>
             <version>${netbeans.version}</version>
             <type>pom</type>
